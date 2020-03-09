@@ -42,13 +42,13 @@ namespace Cabbage1
                 /*Asks the user to input any word a string of characters, also converts all input to lowercase.
                 Otherwise, if a there are matching letters and one is uppercase, it will be invalid.*/
                 string word = Console.ReadLine().ToLower();
-                int pos = findfirstduplicatechar(word);
+                int findchar = findfirstduplicatechar(word);
                 //The if below returns the output if no duplicates are found.
-                if (pos == -1)
+                if (findchar == -1)
                     Console.WriteLine("No repeated characters are found.");
                 //Else will return the duplicate letter found.
                 else
-                    Console.WriteLine(word[pos]);
+                    Console.WriteLine(word[findchar]);
             }
         }
     }
