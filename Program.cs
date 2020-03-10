@@ -14,7 +14,7 @@ namespace Cabbage1
             {
 
                 // this is O(N^2) method 
-                int p = -1, i, j;
+                int c = -1, i, j;
 
                 /*In the for "i" loop, the first character would be check with all letters in the "j" loop, if the conitions
                 are not met, "i" would be incremented by one, and "j" would be checked again*/
@@ -27,15 +27,15 @@ namespace Cabbage1
                         //below will break, if the condition is met
                         if (s[i] == s[j])
                         {
-                            p = i;
+                            c = i;
                             break;
                         }
                     }
                     //Word does not meet the criteria, this breaks and prints the error msg.
-                    if (p != -1)
+                    if (c != -1)
                         break;
                 }
-                return p;
+                return c;
             }
 
             {
